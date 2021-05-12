@@ -49,12 +49,12 @@ function gradeQuiz() {
     }
   } 
     grade = ((grade/correctAnswers.length) *100);
-  console.log(`>>> Overall Grade: ${grade}% (${grade} of ${correctAnswers.length} responses correct) <<<`)
+  console.log(`>>> Overall Grade: ${grade}% ${grade}of ${correctAnswers.length} responses correct) <<<`)
   if (grade >= 80) {
     console.log(">>> Status: PASSED <<<");
   } else {
     console.log(">>> Status: FAILED <<<");
-  } 
+  } return grade
 } 
 
 function runProgram() {
