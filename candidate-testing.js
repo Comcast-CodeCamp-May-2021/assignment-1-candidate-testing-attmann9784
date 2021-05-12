@@ -21,7 +21,7 @@ function askForName() {
   // TODO 1.1c: welcome the candidate //
 candidateName = (input.question("Candidate Name: "));
 
-return candidateName;
+
 }
 
 
@@ -33,12 +33,12 @@ function askQuestion() {
     candidateAnswers.push(input.question("Your Answer: "));
     console.log(`Correct Answer: ${correctAnswers[i]}\n`)
   }
-  return candidateAnswers;
+ 
 }
 
 function gradeQuiz() {
 
-  // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
+// TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   
   for (let i = 0; i <correctAnswers.length; i++) {
     if (correctAnswers[i] === candidateAnswers[i]) {
@@ -54,7 +54,7 @@ function gradeQuiz() {
   } else {
     console.log(">>> Status: FAILED <<<");
   } 
-}
+} 
 
 function runProgram() {
   askForName();
