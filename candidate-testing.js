@@ -55,8 +55,6 @@ function gradeQuiz() {
     console.log(">>> Status: FAILED <<<");
   } 
 }
-// >>> Overall Grade: 40% (2 of 5 responses correct) <<<
-// >>> Status: FAILED <<<
 
 function runProgram() {
   askForName();
