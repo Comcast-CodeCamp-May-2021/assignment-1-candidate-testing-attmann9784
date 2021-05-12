@@ -41,15 +41,15 @@ function gradeQuiz() {
 // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   
   for (let i = 0; i <correctAnswers.length; i++) {
-    if (correctAnswers[i] === candidateAnswers[i]) {
+    if (correctAnswers[i].toLowerCase() === candidateAnswers[i].toLowerCase()) {
       grade = grade + 1;
     } else {
       grade = grade;
     }
   } 
-  let finalGrade = ((grade/correctAnswers.length) *100);
-  console.log(`>>> Overall Grade: ${finalGrade}% (${grade} of ${correctAnswers.length} responses correct) <<<`)
-  if (finalGrade >= 80) {
+    grade = ((grade/correctAnswers.length) *100);
+  console.log(`>>> Overall Grade: ${grade}% (${grade} of ${correctAnswers.length} responses correct) <<<`)
+  if (grade >= 80) {
     console.log(">>> Status: PASSED <<<");
   } else {
     console.log(">>> Status: FAILED <<<");
