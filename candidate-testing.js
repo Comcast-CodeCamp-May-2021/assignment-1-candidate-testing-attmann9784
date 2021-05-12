@@ -30,7 +30,7 @@ function askQuestion() {
 
   for(let i = 0; i < questions.length; i++){
     console.log(`${i+1}) ${questions[i]}`)
-    candidateAnswers.push(input.question("Your Answer: "));
+    candidateAnswers.push(input.question("Your Answer: ").toLowerCase());
     console.log(`Correct Answer: ${correctAnswers[i]}\n`)
   }
   
@@ -42,7 +42,7 @@ function gradeQuiz() {
 // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   
   for (let i = 0; i <correctAnswers.length; i++) {
-    if (correctAnswers[i].toLowerCase() === candidateAnswers[i].toLowerCase()) {
+    if (correctAnswers[i].toLowerCase() === candidateAnswers[i]) {
       grade = grade + 1;
     } else {
       grade = grade;
