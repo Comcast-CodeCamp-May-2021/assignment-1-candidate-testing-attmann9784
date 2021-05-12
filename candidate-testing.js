@@ -49,7 +49,7 @@ function gradeQuiz() {
   } 
   let finalGrade = ((grade/correctAnswers.length) *100);
   console.log(`>>> Overall Grade: ${finalGrade}% (${grade} of ${correctAnswers.length} responses correct) <<<`)
-  if (grade >= 80) {
+  if (finalGrade >= 80) {
     console.log(">>> Status: PASSED <<<");
   } else {
     console.log(">>> Status: FAILED <<<");
