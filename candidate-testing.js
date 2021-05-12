@@ -28,12 +28,12 @@ candidateName = (input.question("Candidate Name: "));
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 
-  for(let i = 0; i < questions.length; i++){
-    console.log(`${i+1}) ${questions[i]}`)
-    candidateAnswers.push(input.question("Your Answer: "));
-    console.log(`Correct Answer: ${correctAnswers[i]}\n`)
-  }
- 
+  // for(let i = 0; i < questions.length; i++){
+  //   console.log(`${i+1}) ${questions[i]}`)
+  //   candidateAnswers.push(input.question("Your Answer: "));
+  //   console.log(`Correct Answer: ${correctAnswers[i]}\n`)
+  // }
+   candidateAnswers = [input.question(questions[0]), input.question(questions[1]), input.question(questions[2]), input.question(questions[3]), input.question(questions[4])];
 }
 
 function gradeQuiz() {
