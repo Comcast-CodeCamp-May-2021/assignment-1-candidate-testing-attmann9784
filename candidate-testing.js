@@ -33,8 +33,8 @@ function askQuestion() {
     candidateAnswers.push(input.question("Your Answer: "));
     console.log(`Correct Answer: ${correctAnswers[i]}\n`)
   }
-  //  candidateAnswers = [input.question(questions[0]), input.question(questions[1]), input.question(questions[2]), input.question(questions[3]), input.question(questions[4])];
-  //  console.log
+  
+   
 }
 
 function gradeQuiz() {
