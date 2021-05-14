@@ -44,14 +44,15 @@ function gradeQuiz() {
 
 // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   
+  console.log(`Candidate Name: ${candidateName}`);
   
   for (let i = 0; i <correctAnswers.length;i++) {
   if (candidateAnswers[i] === correctAnswers[i].toLowerCase()) 
     finalGrade++;
-  console.log(`Candidate Name: ${candidateName}`);
   console.log(`\n${i+1}) ${questions[i]}`);
   console.log(`Your Answer: ${candidateAnswers[i]}`);
   console.log(`Correct Answer: ${correctAnswers[i]}`);
+  }
   
   grade = ((finalGrade/questions.length)*100);
   console.log(`\n>>> Overall Grade: ${(finalGrade/questions.length)*100}% (${finalGrade} of ${questions.length} responses correct) <<<`); 
@@ -59,7 +60,6 @@ function gradeQuiz() {
     console.log(`>>>Status: PASS <<<`);
   } else{
     console.log(`>>> Status: FAILED <<<`);
-  }
   }
   return grade
 }
