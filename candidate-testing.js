@@ -40,7 +40,7 @@ function askQuestion() {
    
 }
 
-function gradeQuiz() {
+function gradeQuiz(candidateAnswers) {
 
 // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   
@@ -60,7 +60,7 @@ function gradeQuiz() {
     console.log(`>>>Status: PASS <<<`);
   } else{
     console.log(`>>> Status: FAILED <<<`);
-  }
+  }console.log({grade});
   return grade
 }
 //   for (let i = 0; i <correctAnswers.length; i++) {
