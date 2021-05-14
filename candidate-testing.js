@@ -47,7 +47,7 @@ let finalGrade = 0;
   console.log(`Candidate Name: ${candidateName}`);
   
   for (let i = 0; i <correctAnswers.length;i++) {
-  if (candidateAnswers[i] === correctAnswers[i].toLowerCase()) 
+  if (String(candidateAnswers[i]) === correctAnswers[i].toLowerCase()) 
     finalGrade++;
   console.log(`\n${i+1}) ${questions[i]}`);
   console.log(`Your Answer: ${candidateAnswers[i]}`);
